@@ -1,0 +1,32 @@
+C:\Users\developer\source\repos\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.exe
+C:\Users\developer\source\repos\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.deps.json
+C:\Users\developer\source\repos\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.runtimeconfig.json
+C:\Users\developer\source\repos\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.runtimeconfig.dev.json
+C:\Users\developer\source\repos\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.dll
+C:\Users\developer\source\repos\ChatApp\ChatServer\bin\Debug\net5.0\ref\ChatServer.dll
+C:\Users\developer\source\repos\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.pdb
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.csproj.AssemblyReference.cache
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfoInputs.cache
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfo.cs
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.dll
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ref\ChatServer.dll
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.pdb
+C:\Users\developer\source\repos\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.genruntimeconfig.cache
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.exe
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.deps.json
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.runtimeconfig.json
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.runtimeconfig.dev.json
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.dll
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\bin\Debug\net5.0\ChatServer.pdb
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.csproj.AssemblyReference.cache
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfoInputs.cache
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfo.cs
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.dll
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\refint\ChatServer.dll
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.pdb
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.genruntimeconfig.cache
+C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ref\ChatServer.dll
