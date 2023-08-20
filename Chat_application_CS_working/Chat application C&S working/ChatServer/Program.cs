@@ -5,6 +5,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 
+/* 
+ We use a packet reader on the client and a packet builder on the server:
+ */
 namespace ChatServer
 {
     class Program
@@ -22,26 +25,42 @@ namespace ChatServer
             //Start the listener:
             _listener.Start();
 
+            //While this is true execute the following:
+            //Once we have accepted the first client and processed the packets,
+            //We will accept the next client:
             while (true)
             {
+                //Create a new instance of the Client class that accepts the TCP CLient:
                 var client = new Client(_listener.AcceptTcpClient());
+
+                //Add new clients:
                 _users.Add(client);
 
-                /* Broadcast the connection to everyone on the server */
+                //Broadcast the connection to all clients on the server:
+                //This will be used to update their local list of users:
                 BroadcastConnection();
             }
         }
 
+        //Broad Cast the connection of all clients to other clients:
         static void BroadcastConnection()
         {
+            //foreach user that is connected, we send out a packet to each user to notify them that another user has connected:
             foreach (var user in _users)
             {
                 foreach (var usr in _users)
                 {
+                    //Create a new instance of the PacketBulder class called broadcastPacket:
                     var broadcastPacket = new PacketBuilder();
+
+                    //Building the packet:
+                    //This packet will send an op code of 1:
                     broadcastPacket.WriteOpCode(1);
+                    //Write a message that passes in a string containing the username of the person:
                     broadcastPacket.WriteMessage(usr.Username);
+                    //Write a message that passes in a string containing the UID of the client that connected to the server:
                     broadcastPacket.WriteMessage(usr.UID.ToString());
+                    //Send the packet:
                     user.ClientSocket.Client.Send(broadcastPacket.GetPacketBytes());
                 }
             }

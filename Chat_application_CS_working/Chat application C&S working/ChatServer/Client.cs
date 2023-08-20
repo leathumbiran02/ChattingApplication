@@ -17,6 +17,7 @@ namespace ChatServer
         //Keep track of the TCP client socket object here:
         public TcpClient ClientSocket { get; set; }
 
+        //Define an instance of the PacketReader class called _packetReader:
         PacketReader _packetReader;
 
         public Client(TcpClient client)
@@ -25,9 +26,11 @@ namespace ChatServer
             ClientSocket = client;
             //Generate a new user id whenever the client is instantiated:
             UID = Guid.NewGuid();
+            //Create a new instance of the PacketReader class and pass in the network stream:
             _packetReader = new PacketReader(ClientSocket.GetStream());
 
             var opcode = _packetReader.ReadByte();
+
             Username = _packetReader.ReadMessage();
 
             //Broadcast this into the server console saying that a user has connected:
