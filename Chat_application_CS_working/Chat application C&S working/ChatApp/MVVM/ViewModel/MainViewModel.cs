@@ -14,13 +14,16 @@ namespace ChatClient.MVVM.ViewModel
 {
     class MainViewModel
     {
+        //Create an observable collection of type UserModel called Users:
         public ObservableCollection<UserModel> Users { get; set; }
         public ObservableCollection<string> Messages { get; set; }
 
         //Property of type RelayCommand called ConnectToServerCommand:
         public RelayCommand ConnectToServerCommand { get; set; }
+        //Property of type RelayComand called SendMessageCommand:
         public RelayCommand SendMessageCommand { get; set; }
 
+        //Properties for Username and Message:
         public string Username { get; set; }
         public string Message { get; set; }
 
@@ -30,7 +33,10 @@ namespace ChatClient.MVVM.ViewModel
         //Main View Model constructor:
         public MainViewModel()
         {
+            //Create an instance of the observable collection of type UserModel called Users:
             Users = new ObservableCollection<UserModel>();
+
+            //Create an instance of the observable collection of type string called Messages:
             Messages = new ObservableCollection<string>();
 
             //Create a new instance of the imported server object and call it _server:
@@ -49,13 +55,14 @@ namespace ChatClient.MVVM.ViewModel
             //A relay command is used to disable the connect button if the username is empty:
             ConnectToServerCommand = new RelayCommand(o => _server.ConnectToServer(Username), o => !string.IsNullOrEmpty(Username));
 
-            //THIS LINE OF CODE IS GIVING ISSUES:
+            //THIS LINE OF CODE IS GIVING ISSUES, THE TEXT BOX IS NOT CLEARING AFTER SENDING A MESSAGE:
             SendMessageCommand = new RelayCommand(o => _server.SendMessageToServer(Message), o => !string.IsNullOrEmpty(Message));
         }
 
         //Action 3: user disconnected
         private void RemoveUser()
         {
+            //Find the UID and then remove the user from the list of connected list of clients:
             var uid = _server.PacketReader.ReadMessage();
             var user = Users.Where(x => x.UID == uid).FirstOrDefault();
             Application.Current.Dispatcher.Invoke(() => Users.Remove(user));
@@ -64,7 +71,9 @@ namespace ChatClient.MVVM.ViewModel
         //Action 2: user sent a message:
         private void MessageReceived()
         {
+            //Read the data that was sent:
             var msg = _server.PacketReader.ReadMessage();
+            //Append the message to the messages collection:
             Application.Current.Dispatcher.Invoke(() => Messages.Add(msg));
         }
 
@@ -74,17 +83,17 @@ namespace ChatClient.MVVM.ViewModel
             //Create a new instance of the UserModel class called user:
             var user = new UserModel
             {
+                //Read the new user's username and UID using PacketReader:
                 Username = _server.PacketReader.ReadMessage(),
                 UID = _server.PacketReader.ReadMessage(),
             };
 
+            //Append the new user to the collection of existing users on the server:
             if (!Users.Any(x => x.UID == user.UID))
             {
+                //Use dispatcher to add the user to the collection:
                 Application.Current.Dispatcher.Invoke(() => Users.Add(user));
             }
         }
-
-
-
     }
 }

@@ -66,10 +66,12 @@ namespace ChatServer
             }
         }
 
+        //Broadcasts the message to all connected clients:
         public static void BroadcastMessage(string message)
         {
             foreach (var user in _users)
             {
+                //Construct a packet using opcode 5 and send it to all connected clients:
                 var msgPacket = new PacketBuilder();
                 msgPacket.WriteOpCode(5);
                 msgPacket.WriteMessage(message);
@@ -77,20 +79,23 @@ namespace ChatServer
             }
         }
 
+        //Broadcasts a message saying that a client has left the server based on their UID:
         public static void BroadcastDisconnect(string uid)
         {
             var disconnectedUser = _users.Where(x => x.UID.ToString() == uid).FirstOrDefault();
-            _users.Remove(disconnectedUser);
+            _users.Remove(disconnectedUser); //Remove the user:
 
             foreach (var user in _users)
             {
+                //Build a packet, specify it's opcode as 10 and send it to all connected clients:
                 var broadcastPacket = new PacketBuilder();
                 broadcastPacket.WriteOpCode(10);
                 broadcastPacket.WriteMessage(uid);
                 user.ClientSocket.Client.Send(broadcastPacket.GetPacketBytes());
             }
 
-            BroadcastMessage($"[{disconnectedUser.Username}] Disconnected!");
+            //Broadcast the username of the person that left:
+            BroadcastMessage($"[{DateTime.Now}]: {disconnectedUser.Username} has left the chat!");
         }
     }
 }

@@ -91,11 +91,16 @@ namespace ChatClient.Net
             });
         }
 
+        //Function to send messages to the server by passing in the message as a parameter:
         public void SendMessageToServer(string message)
         {
+            //Create a new instance of the PacketBuilder class called messagePacket:
             var messagePacket = new PacketBuilder();
+            //Specify it's opcode as 5:
             messagePacket.WriteOpCode(5);
+            //Write the message by passing in the messge that was entered:
             messagePacket.WriteMessage(message);
+            //Send the packet:
             _client.Client.Send(messagePacket.GetPacketBytes());
         }
     }

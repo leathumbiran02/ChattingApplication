@@ -36,20 +36,26 @@ namespace ChatServer
             //Broadcast this into the server console saying that a user has connected:
             Console.WriteLine($"[{DateTime.Now}]: {Username} has joined the chat!");
 
+            //Start the process by off-load it to a different thread:
             Task.Run(() => Process());
 
         }
 
+        //Function to process all of the packets that is received:
         void Process()
         {
+            //Infinite loop that will keep running while it is true:
             while (true)
             {
+                //Try catch loop for exception handling:
                 try
                 {
+                    //Read the opcode sent:
                     var opcode = _packetReader.ReadByte();
+        
                     switch (opcode)
                     {
-                        case 5:
+                        case 5: //opcode = 5 then display the message on the console for the server and in the client with the date, time, name of the user and the message that they sent:
                             var msg = _packetReader.ReadMessage();
                             Console.WriteLine($"[{DateTime.Now}]: {Username}: {msg}");
                             Program.BroadcastMessage($"[{DateTime.Now}]: [{Username}]: {msg}");
@@ -58,12 +64,12 @@ namespace ChatServer
                             break;
                     }
                 }
-                catch (Exception)
+                catch (Exception) //Can be used to specify network exceptions or if a user connects and disconnects from the server:
                 {
                     //Console.WriteLine($"[{UID.ToString()}]: Disconnected!");
                     Console.WriteLine($"[{DateTime.Now}]: {Username} has left the chat!");
                     Program.BroadcastDisconnect(UID.ToString());
-                    ClientSocket.Close();
+                    ClientSocket.Close(); //Close the client socket object:
                     break;
                 }
             }
