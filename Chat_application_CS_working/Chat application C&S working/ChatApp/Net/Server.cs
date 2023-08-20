@@ -7,6 +7,7 @@ namespace ChatClient.Net
 {
     class Server
     {
+        //Create TCP client:
         TcpClient _client;
         public PacketReader PacketReader;
 
@@ -14,16 +15,20 @@ namespace ChatClient.Net
         public event Action msgReceivedEvent;
         public event Action userDisconnectEvent;
 
+        //Server constructor:
         public Server()
         {
+            //Create a new instance of the TCP client:
             _client = new TcpClient();
         }
 
+        //Function that will connect to the server by passing in a user's username:
         public void ConnectToServer(string username)
         {
+            //If the client is not connected to the server execute the following:
             if (!_client.Connected)
             {
-                _client.Connect("127.0.0.1", 7891);
+                _client.Connect("127.0.0.1", 7891); //Connect to the server on ip 127.0.0.1 and port number 7891:
                 PacketReader = new PacketReader(_client.GetStream());
 
                 if (!string.IsNullOrEmpty(username))

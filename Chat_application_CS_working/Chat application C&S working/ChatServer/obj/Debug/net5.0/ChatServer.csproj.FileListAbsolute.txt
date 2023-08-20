@@ -30,3 +30,18 @@ C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\refint
 C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.pdb
 C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ChatServer.genruntimeconfig.cache
 C:\Users\arnom\Desktop\Bsc IT 3\ITEHA\ChatApp\ChatServer\obj\Debug\net5.0\ref\ChatServer.dll
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.exe
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.deps.json
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.runtimeconfig.json
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.runtimeconfig.dev.json
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.dll
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ref\ChatServer.dll
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.pdb
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfoInputs.cache
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfo.cs
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.dll
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ref\ChatServer.dll
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.pdb
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.genruntimeconfig.cache
