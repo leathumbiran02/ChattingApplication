@@ -1,6 +1,3 @@
-[2023/08/21 02:21:51] Lea: Hi
-[2023/08/21 02:22:04] Lea: I am saving my conversation history now!
-[2023/08/21 02:24:07] Lea: I am sending more messages!
-[2023/08/21 02:24:12] Lea: See
-[2023/08/21 02:25:51] Lea: I am going to send a very very VERY long message to see if the server can accept it...
-[2023/08/21 02:26:17] Lea: It looks like it can 0-0
+[2023/08/21 02:29:40] User 1: Are our chats being saved!?
+[2023/08/21 02:29:47] User 2: Hmm, it appears so...
+[2023/08/21 02:30:20] User 3: Then we should type very very VERY long messages to see if the server can handle it!
