@@ -56,6 +56,7 @@ namespace ChatServer
                         case 5:
                             var msg = _packetReader.ReadMessage();
 
+                            //Save the messages sent to a log file called conversation_log.txt
                             logMessage($"{Username}: {msg}");
 
                             Console.WriteLine($"[{DateTime.Now}]: {Username}: {msg}");
@@ -76,12 +77,16 @@ namespace ChatServer
             }
         }
 
+        //Function to save the messages sent between clients to a text file:
         static void logMessage(string message)
         {
+            //File path for the log file:
             string logFilePath = "conversation_log.txt";
 
+            //Format to store the messages in:
             string logEntry = $"[{DateTime.Now}] {message}";
 
+            //Appending the new entries to the text file:
             using (StreamWriter writer = File.AppendText(logFilePath))
             {
                 writer.WriteLine(logEntry);
