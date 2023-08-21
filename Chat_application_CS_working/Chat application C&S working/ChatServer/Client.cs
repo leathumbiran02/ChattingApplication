@@ -2,6 +2,7 @@
 using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ChatServer
 {
@@ -44,35 +45,48 @@ namespace ChatServer
         //Function to process all of the packets that is received:
         void Process()
         {
-            //Infinite loop that will keep running while it is true:
-            while (true)
+            try
             {
-                //Try catch loop for exception handling:
-                try
+                while (ClientSocket.Connected)
                 {
-                    //Read the opcode sent:
                     var opcode = _packetReader.ReadByte();
-        
+
                     switch (opcode)
                     {
-                        case 5: //opcode = 5 then display the message on the console for the server and in the client with the date, time, name of the user and the message that they sent:
+                        case 5:
                             var msg = _packetReader.ReadMessage();
+
+                            logMessage($"{Username}: {msg}");
+
                             Console.WriteLine($"[{DateTime.Now}]: {Username}: {msg}");
                             Program.BroadcastMessage($"[{DateTime.Now}]: [{Username}]: {msg}");
+
                             break;
                         default:
                             break;
                     }
                 }
-                catch (Exception) //Can be used to specify network exceptions or if a user connects and disconnects from the server:
-                {
-                    //Console.WriteLine($"[{UID.ToString()}]: Disconnected!");
-                    Console.WriteLine($"[{DateTime.Now}]: {Username} has left the chat!");
-                    Program.BroadcastDisconnect(UID.ToString());
-                    ClientSocket.Close(); //Close the client socket object:
-                    break;
-                }
+            }
+            catch (Exception ex)
+            {
+                // Disconnect and clean up after the loop ends
+                Console.WriteLine($"[{DateTime.Now}]: {Username} has left the chat!");
+                Program.BroadcastDisconnect(UID.ToString());
+                ClientSocket.Close();
             }
         }
+
+        static void logMessage(string message)
+        {
+            string logFilePath = "conversation_log.txt";
+
+            string logEntry = $"[{DateTime.Now}] {message}";
+
+            using (StreamWriter writer = File.AppendText(logFilePath))
+            {
+                writer.WriteLine(logEntry);
+            }
+        }
+
     }
 }

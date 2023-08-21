@@ -66,26 +66,33 @@ namespace ChatClient.Net
                 //infinite loop, will run as long as it's true:
                 while (true)
                 {
-                    //Read the opcode:
-                    var opcode = PacketReader.ReadByte();
-                    switch (opcode)
+                    try
                     {
-                        //the ? is used to check if its not null:
-                        case 1: //opcode = 1 then connect the user:
-                            connectedEvent?.Invoke();
-                            break;
+                        //Read the opcode:
+                        var opcode = PacketReader.ReadByte();
+                        switch (opcode)
+                        {
+                            //the ? is used to check if its not null:
+                            case 1: //opcode = 1 then connect the user:
+                                connectedEvent?.Invoke();
+                                break;
 
-                        case 5: //opcode = 5 then user sent and received messages:
-                            msgReceivedEvent?.Invoke();
-                            break;
+                            case 5: //opcode = 5 then user sent and received messages:
+                                msgReceivedEvent?.Invoke();
+                                break;
 
-                        case 10: //opcode = 10 then user disconnected:
-                            userDisconnectEvent?.Invoke();
-                            break;
+                            case 10: //opcode = 10 then user disconnected:
+                                userDisconnectEvent?.Invoke();
+                                break;
 
-                        default: //Default behaviour if the opcode is not one of the cases above:
-                            Console.WriteLine("Waiting for an opcode...");
-                            break;
+                            default: //Default behaviour if the opcode is not one of the cases above:
+                                Console.WriteLine("Waiting for an opcode...");
+                                break;
+                        }
+                    }catch (Exception ex)
+                    {
+                        Console.WriteLine($"Exception: {ex.Message}");
+                        //Handle the exception or log it, but avoid breaking the loop
                     }
                 }
             });

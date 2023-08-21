@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.IO;
 
 /* 
  We use a packet reader on the client and a packet builder on the server:
@@ -16,8 +17,12 @@ namespace ChatServer
         static List<Client> _users;
         //Create a TCP listener called _listener:
         static TcpListener _listener;
+
         static void Main(string[] args)
         {
+            //Used to find the folder that the application is running from:
+            //Console.WriteLine($"Working Directory: {Directory.GetCurrentDirectory()}");
+
             //Create a new instance of the list of type client called _users:
             _users = new List<Client>();
             //Create a new instance of the TCP listener class by passing in the ip address and port number for it to listen on:

@@ -1,0 +1,13 @@
+issues:
+
+1.) When sending messages it does not clear the message box.
+2.) There are no longer files for storing the conversation history or for the runtime exceptions from the server.
+3.) There is no login and registration capabiltiies.
+4.) There is no database.
+5.) There is no edit and deletion of accounts.
+6.) The user interface has not been created.
+7.) The reason for using MVVM has not been justified.
+8.) When sending long messages an exception occurs in the Server.cs
+
+References:
+1.) https://youtu.be/I-Xmp-mulz4?si=5GWyRsBAie-BJcgV
