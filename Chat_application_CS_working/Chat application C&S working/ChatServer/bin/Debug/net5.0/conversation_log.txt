@@ -1,3 +1,8 @@
 [2023/08/21 02:29:40] User 1: Are our chats being saved!?
 [2023/08/21 02:29:47] User 2: Hmm, it appears so...
 [2023/08/21 02:30:20] User 3: Then we should type very very VERY long messages to see if the server can handle it!
+[2023/08/21 02:41:16] User 5: I am testing if exceptions are being stored in a file...
+[2023/08/21 02:41:26] User 4: Maybe leave the chat and see if it saves that?
+[2023/08/21 02:41:32] User 5: Sure
+[2023/08/21 02:44:39] Hi: Hi!
+[2023/08/21 02:46:47] Bye: Bye!

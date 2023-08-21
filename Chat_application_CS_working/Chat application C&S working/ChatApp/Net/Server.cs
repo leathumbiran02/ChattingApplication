@@ -2,6 +2,7 @@
 using System;
 using System.Net.Sockets;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ChatClient.Net
 {
@@ -91,8 +92,8 @@ namespace ChatClient.Net
                         }
                     }catch (Exception ex)
                     {
-                        Console.WriteLine($"Exception: {ex.Message}");
-                        //Handle the exception or log it, but avoid breaking the loop
+                        //Save the exception and runtime errors to a file called exception_log.txt:
+                        logException(ex);
                     }
                 }
             });
@@ -109,6 +110,28 @@ namespace ChatClient.Net
             messagePacket.WriteMessage(message);
             //Send the packet:
             _client.Client.Send(messagePacket.GetPacketBytes());
+        }
+
+        //Function to save the exceptions and runtime errors from the server to a text file:
+        static void logException(Exception ex)
+        {
+            //File path for the log file:
+            string logFilePath = "exception_log.txt";
+
+            //Format to store the messages in:
+            string logEntry = $"[{DateTime.Now}] - Exception: {ex.Message}\n{ex.StackTrace}\n";
+
+            //Appending the new entries to the text file:
+            using (StreamWriter writer = File.AppendText(logFilePath))
+            {
+                writer.WriteLine(logEntry);
+            }
+        }
+
+        //Function to test for exceptions and to see if they are being saved to a text file:
+        public void ThrowExceptionForTesting()
+        {
+            throw new Exception("This is a test exception.");
         }
     }
 }

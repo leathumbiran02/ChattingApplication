@@ -70,7 +70,10 @@ namespace ChatServer
             }
             catch (Exception ex)
             {
-                // Disconnect and clean up after the loop ends
+                //Save the exception and runtime errors to a file called exception_log.txt:
+                logException(ex);
+
+                //Disconnect and clean up after the loop ends:
                 Console.WriteLine($"[{DateTime.Now}]: {Username} has left the chat!");
                 Program.BroadcastDisconnect(UID.ToString());
                 ClientSocket.Close();
@@ -91,6 +94,28 @@ namespace ChatServer
             {
                 writer.WriteLine(logEntry);
             }
+        }
+
+        //Function to save the exceptions and runtime errors from the server to a text file:
+        static void logException(Exception ex)
+        {
+            //File path for the log file:
+            string logFilePath = "exception_log.txt";
+
+            //Format to store the messages in:
+            string logEntry = $"[{DateTime.Now}] - Exception: {ex.Message}\n{ex.StackTrace}\n";
+
+            //Appending the new entries to the text file:
+            using (StreamWriter writer = File.AppendText(logFilePath))
+            {
+                writer.WriteLine(logEntry);
+            }
+        }
+
+        //Function to test for exceptions and to see if they are being saved to a text file:
+        public void ThrowExceptionForTesting()
+        {
+            throw new Exception("This is a test exception.");
         }
 
     }
