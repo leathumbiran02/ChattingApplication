@@ -50,3 +50,39 @@
    at System.IO.BinaryReader.ReadByte()
    at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
 
+[2023/08/23 14:46:20] - Exception: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   at System.Net.Sockets.NetworkStream.ReadByte()
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/08/23 15:19:21] - Exception: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   at System.Net.Sockets.NetworkStream.ReadByte()
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/08/23 15:53:52] - Exception: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   at System.Net.Sockets.NetworkStream.ReadByte()
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/08/23 16:01:25] - Exception: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   at System.Net.Sockets.NetworkStream.ReadByte()
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/08/23 16:16:47] - Exception: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   at System.Net.Sockets.NetworkStream.ReadByte()
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/08/23 16:24:40] - Exception: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   at System.Net.Sockets.NetworkStream.ReadByte()
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+

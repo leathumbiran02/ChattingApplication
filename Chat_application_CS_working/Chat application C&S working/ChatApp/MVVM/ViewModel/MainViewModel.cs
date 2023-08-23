@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 using System.Windows;
 
 //View model for the client to connect to the server:
-namespace ChatClient.MVVM.ViewModel
+namespace ChatApp
 {
-    class MainViewModel
+    public class MainViewModel
     {
         //Create an observable collection of type UserModel called Users:
         public ObservableCollection<UserModel> Users { get; set; }
@@ -31,8 +31,10 @@ namespace ChatClient.MVVM.ViewModel
         private Server _server;
 
         //Main View Model constructor:
-        public MainViewModel()
+        public MainViewModel(string username)
         {
+            Username = username; //Store the logged in Username in username:
+
             //Create an instance of the observable collection of type UserModel called Users:
             Users = new ObservableCollection<UserModel>();
 

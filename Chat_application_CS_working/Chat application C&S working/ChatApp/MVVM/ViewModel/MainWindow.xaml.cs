@@ -8,9 +8,10 @@ namespace ChatApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(string username)
         {
             InitializeComponent();
+            DataContext = new MainViewModel(username); // Set the DataContext to a new instance of MainViewModel
         }
     }
 }
