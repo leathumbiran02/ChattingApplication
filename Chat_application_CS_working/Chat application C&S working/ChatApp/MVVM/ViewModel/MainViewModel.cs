@@ -100,18 +100,21 @@ namespace ChatApp
 
         public void Logout()
         {
-            //Disconnect from the server and perform cleanup
+            //Disconnect from the server and perform cleanup:
             _server.Disconnect();
 
-            //After performing necessary actions, navigate to the RegisterWindow
-            RegisterWindow registerWindow = new RegisterWindow();
-            registerWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-            registerWindow.Owner = Application.Current.MainWindow;
+            // Close all windows except the main window
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window != Application.Current.MainWindow)
+                {
+                    window.Close();
+                }
+            }
 
-            //Hide the current MainWindow:
-            Application.Current.MainWindow.Hide();
-
-            //Show the Register Window:
+            // After performing necessary actions, navigate to the RegisterWindow
+            var registerWindow = new RegisterWindow();
+            registerWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             registerWindow.Show();
         }
     }

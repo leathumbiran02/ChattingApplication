@@ -13,6 +13,11 @@ namespace ChatApp
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            ShutdownMode = ShutdownMode.OnExplicitShutdown;
+        }
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
