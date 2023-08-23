@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET5_0;NETCOREAPP
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\App.xaml
-2-659890125
+3-434324459
 
-10192809994
+11-958103350
 210-1979262805
-MVVM\View\LoginWindow.xaml;MVVM\View\MainWindow.xaml;
+MVVM\View\LoginWindow.xaml;MVVM\View\MainWindow.xaml;MVVM\View\RegisterWindow.xaml;
 
 True
 

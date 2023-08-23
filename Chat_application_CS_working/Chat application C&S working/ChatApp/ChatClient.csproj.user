@@ -10,12 +10,18 @@
     <Compile Update="MVVM\ViewModel\LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\ViewModel\RegisterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MVVM\View\LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\RegisterWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

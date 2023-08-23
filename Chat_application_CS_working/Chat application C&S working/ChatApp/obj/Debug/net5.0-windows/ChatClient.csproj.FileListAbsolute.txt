@@ -106,11 +106,13 @@ C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\ChatClient.csproj.AssemblyReference.cache
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\MVVM\View\LoginWindow.g.cs
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\MVVM\View\MainWindow.g.cs
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\MVVM\View\RegisterWindow.g.cs
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\App.g.cs
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\ChatClient_MarkupCompile.cache
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\ChatClient_MarkupCompile.lref
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\MVVM\View\LoginWindow.baml
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\MVVM\View\MainWindow.baml
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\MVVM\View\RegisterWindow.baml
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\ChatClient.g.resources
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\ChatClient.GeneratedMSBuildEditorConfig.editorconfig
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatApp\obj\Debug\net5.0-windows\ChatClient.AssemblyInfoInputs.cache
