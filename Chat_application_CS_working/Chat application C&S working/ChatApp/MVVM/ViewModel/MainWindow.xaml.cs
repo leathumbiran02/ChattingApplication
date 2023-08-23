@@ -14,7 +14,7 @@ namespace ChatApp
             DataContext = new MainViewModel(username); // Set the DataContext to a new instance of MainViewModel
         }
 
-        private void logout_btn_click(object sender, RoutedEventArgs e)
+        private void Logout_btn_click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)

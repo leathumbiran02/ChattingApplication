@@ -49,7 +49,7 @@
                 Name="submit_btn"
                 Margin="250,30"
                 Background="#00ADB5"
-                Click="submit_btn_click"
+                Click="Submit_btn_click"
                 Command="{Binding ConnectToServerCommand}"
                 Content="Submit"
                 FontSize="18"

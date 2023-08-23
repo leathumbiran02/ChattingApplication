@@ -37,11 +37,11 @@
                 FontStyle="Normal"
                 Foreground="White" />
             <ListView
+                Margin="0,0,0,100"
                 Background="#FF222831"
                 FontFamily="Arial"
                 FontSize="15"
                 Foreground="White"
-                Margin="0 0 0 100"
                 ItemsSource="{Binding Users}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -51,17 +51,17 @@
             </ListView>
         </DockPanel>
         <Button
-                Height="25"
-                Margin="20,380,20,20"
-                Background="#FF00ADB5"
-                BorderBrush="#FF282828"
-                Click="logout_btn_click"
-                Content="Logout"
-                DockPanel.Dock="Bottom"
-                FontFamily="Arial"
-                FontSize="15"
-                FontStyle="Normal"
-                Foreground="White" />
+            Height="25"
+            Margin="20,380,20,20"
+            Background="#FF00ADB5"
+            BorderBrush="#FF282828"
+            Click="Logout_btn_click"
+            Content="Logout"
+            DockPanel.Dock="Bottom"
+            FontFamily="Arial"
+            FontSize="15"
+            FontStyle="Normal"
+            Foreground="White" />
         <StackPanel Grid.Column="1" Background="#FF222831">
             <ListView
                 Height="380"

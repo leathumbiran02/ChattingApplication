@@ -68,7 +68,7 @@ namespace ChatApp
             SendMessageCommand = new RelayCommand(o => _server.SendMessageToServer(Message), o => !string.IsNullOrEmpty(Message));
         }
 
-        private void submit_btn_click(object sender, RoutedEventArgs e)
+        private void Submit_btn_click(object sender, RoutedEventArgs e)
         {
             SqlConnection sqlCon = new SqlConnection(@"Data Source=localhost; Initial Catalog=ChattingAppDB; Integrated Security=True"); //Connection string for SQL Server:
 
