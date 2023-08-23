@@ -16,15 +16,17 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <DockPanel>
+        <DockPanel Background="#FF222831">
             <TextBox
                 Height="25"
+                Margin="20,20,20,20"
                 Background="#FFEEEEEE"
                 DockPanel.Dock="Top"
                 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
             <Button
                 x:Name="connect_btn"
                 Height="25"
+                Margin="20,0,20,20"
                 Background="#FF00ADB5"
                 BorderBrush="#FF282828"
                 Command="{Binding ConnectToServerCommand}"
@@ -39,6 +41,7 @@
                 FontFamily="Arial"
                 FontSize="15"
                 Foreground="White"
+                Margin="0 0 0 100"
                 ItemsSource="{Binding Users}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -47,7 +50,18 @@
                 </ListView.ItemTemplate>
             </ListView>
         </DockPanel>
-
+        <Button
+                Height="25"
+                Margin="20,380,20,20"
+                Background="#FF00ADB5"
+                BorderBrush="#FF282828"
+                Click="logout_btn_click"
+                Content="Logout"
+                DockPanel.Dock="Bottom"
+                FontFamily="Arial"
+                FontSize="15"
+                FontStyle="Normal"
+                Foreground="White" />
         <StackPanel Grid.Column="1" Background="#FF222831">
             <ListView
                 Height="380"

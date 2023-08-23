@@ -140,5 +140,14 @@ namespace ChatClient.Net
         {
             throw new Exception("This is a test exception.");
         }
+
+        //Function to disconnect a client from the server:
+        public void Disconnect()
+        {
+            if(_client.Connected)//If the client is connected, close the socket connection:
+            {
+                _client.Close(); //Close the socket connection:
+            }
+        }
     }
 }

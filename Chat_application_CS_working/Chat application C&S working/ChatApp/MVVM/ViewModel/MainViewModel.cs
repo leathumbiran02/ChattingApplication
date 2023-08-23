@@ -97,5 +97,18 @@ namespace ChatApp
                 Application.Current.Dispatcher.Invoke(() => Users.Add(user));
             }
         }
+
+        public void Logout()
+        {
+            //Disconnect from the server and perform cleanup
+            _server.Disconnect();
+
+            //After performing necessary actions, navigate to the RegisterWindow
+            RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.Show();
+
+            //Close the current MainWindow:
+            Application.Current.MainWindow.Close();
+        }
     }
 }
