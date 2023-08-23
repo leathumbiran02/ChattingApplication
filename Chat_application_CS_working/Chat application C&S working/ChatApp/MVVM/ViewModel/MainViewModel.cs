@@ -105,10 +105,14 @@ namespace ChatApp
 
             //After performing necessary actions, navigate to the RegisterWindow
             RegisterWindow registerWindow = new RegisterWindow();
-            registerWindow.Show();
+            registerWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            registerWindow.Owner = Application.Current.MainWindow;
 
-            //Close the current MainWindow:
-            Application.Current.MainWindow.Close();
+            //Hide the current MainWindow:
+            Application.Current.MainWindow.Hide();
+
+            //Show the Register Window:
+            registerWindow.Show();
         }
     }
 }

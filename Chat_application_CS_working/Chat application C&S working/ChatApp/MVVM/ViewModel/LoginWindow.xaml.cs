@@ -68,28 +68,39 @@ namespace ChatApp
             SendMessageCommand = new RelayCommand(o => _server.SendMessageToServer(Message), o => !string.IsNullOrEmpty(Message));
         }
 
+        //Function to handle when a user logs in:
         private void Submit_btn_click(object sender, RoutedEventArgs e)
         {
+            //If any field is empty, display an error message and return:
+            if (AreRequiredFieldsEmpty())
+            {
+                MessageBox.Show("Please fill in all required fields.");
+                return;
+            }
+
             SqlConnection sqlCon = new SqlConnection(@"Data Source=localhost; Initial Catalog=ChattingAppDB; Integrated Security=True"); //Connection string for SQL Server:
 
-            try{
-                if(sqlCon.State == ConnectionState.Closed) //If the connection to the database is closed execute the following:
+            try
+            {
+                if (sqlCon.State == ConnectionState.Closed) //If the connection to the database is closed execute the following:
                 {
                     sqlCon.Open(); //Open the SQL connection:
                     String query = "SELECT COUNT(1) FROM users_table WHERE username=@username AND password=@password"; //Create a query to count a user with a matching username and password:
-                    SqlCommand sqlCmd = new SqlCommand(query, sqlCon); 
+                    SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                     sqlCmd.CommandType = CommandType.Text;
                     sqlCmd.Parameters.AddWithValue("@username", username_txt.Text);
                     sqlCmd.Parameters.AddWithValue("@password", password_txt.Password);
                     int count = Convert.ToInt32(sqlCmd.ExecuteScalar()); //Get the count and convert to int 32:
 
-                    if(count == 1) //If count is equal to 1, open the chatting application window:
+                    if (count == 1) //If count is equal to 1, open the chatting application window:
                     {
                         MessageBox.Show("You are being logged in...");
 
                         MainWindow mainWindow = new MainWindow(username_txt.Text);
+                        mainWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                        mainWindow.Owner = this; // Set the login window as the owner of the register window
                         mainWindow.Show();
-                        this.Close();
+                        this.Hide();
                     }
                     else
                     {
@@ -97,7 +108,7 @@ namespace ChatApp
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -107,6 +118,17 @@ namespace ChatApp
             }
         }
 
+        //Function to navigate to the Registration page:
+        private void Go_to_register(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            registerWindow.Owner = this; // Set the login window as the owner of the register window
+            registerWindow.Show();
+            this.Hide();
+        }
+
+        //Function to handle when a user connects to the server:
         private void UserConnected()
         {
             //Create a new instance of the UserModel class called user:
@@ -123,6 +145,13 @@ namespace ChatApp
                 //Use dispatcher to add the user to the collection:
                 Application.Current.Dispatcher.Invoke(() => Users.Add(user));
             }
+        }
+
+        //Function to handle if any fields are empty in the form:
+        private bool AreRequiredFieldsEmpty()
+        {
+            return string.IsNullOrEmpty(username_txt.Text) ||
+                   string.IsNullOrEmpty(password_txt.Password);
         }
     }
 }

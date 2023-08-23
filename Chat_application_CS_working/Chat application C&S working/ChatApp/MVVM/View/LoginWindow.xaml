@@ -12,19 +12,21 @@
     FontSize="18"
     mc:Ignorable="d">
     <Border
-        Margin="30"
+        Margin="150,55"
         Background="#222831"
         CornerRadius="30">
-        <StackPanel Margin="20">
+        <StackPanel Margin="80,0">
             <Label
                 HorizontalAlignment="Center"
                 Content="Login"
                 FontSize="40"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <Separator Background="#EEEEEE" />
             <Label
-                Margin="30,20"
+                Margin="30,0"
                 Content="Username"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <!--  Username:  -->
             <TextBox
@@ -35,8 +37,9 @@
                 Foreground="#EEEEEE"
                 Text="{Binding Username, Mode=TwoWay}" />
             <Label
-                Margin="30,20"
+                Margin="30,0"
                 Content="Password"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <!--  Password:  -->
             <PasswordBox
@@ -47,14 +50,24 @@
                 Foreground="#EEEEEE" />
             <Button
                 Name="submit_btn"
-                Margin="250,30"
+                Margin="100,30"
                 Background="#00ADB5"
                 Click="Submit_btn_click"
                 Command="{Binding ConnectToServerCommand}"
                 Content="Submit"
                 FontSize="18"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <!--  Submit Button:  -->
+            <Button
+                HorizontalAlignment="Center"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="Go_to_register"
+                FontWeight="SemiBold"
+                Foreground="#EEEEEE">
+                Don't have an account? Click here
+            </Button>
         </StackPanel>
     </Border>
 </Window>

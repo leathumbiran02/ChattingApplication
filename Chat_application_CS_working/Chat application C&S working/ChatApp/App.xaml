@@ -2,7 +2,8 @@
     x:Class="ChatApp.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:ChatApp"
-    StartupUri="MVVM/View/RegisterWindow.xaml">
+    xmlns:local="clr-namespace:ChatApp">
+    <!--  StartupUri="MVVM/View/RegisterWindow.xaml"  --> 
+    <!--  -Start Up Window was defined in App.xaml.cs instead  -->
     <Application.Resources />
 </Application>

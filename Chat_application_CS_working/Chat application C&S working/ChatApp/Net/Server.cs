@@ -10,7 +10,7 @@ namespace ChatClient.Net
     {
         //Create TCP client:
         TcpClient _client;
-        
+
         //Create an instance of the PacketReader class:
         public PacketReader PacketReader;
 
@@ -21,6 +21,9 @@ namespace ChatClient.Net
         public event Action msgReceivedEvent;
         //Action 3: user disconnects
         public event Action userDisconnectEvent;
+
+        //Create a boolean to track whether the packets are being read or not:
+        private bool _isReadingPackets = false;
 
         //Server constructor:
         public Server()
@@ -36,7 +39,7 @@ namespace ChatClient.Net
             if (!_client.Connected)
             {
                 _client.Connect("127.0.0.1", 7891); //Connect to the server on ip 127.0.0.1 and port number 7891:
-                
+
                 //Use packet builder to send data to the server:
                 PacketReader = new PacketReader(_client.GetStream());
 
@@ -51,8 +54,8 @@ namespace ChatClient.Net
                     _client.Client.Send(connectPacket.GetPacketBytes());
                 }
 
-                //Read/Interpret the packets:
-                ReadPackets();
+                //Read/Interpret the packets by calling the StartReadingPackets function:
+                StartReadingPackets();
             }
         }
 
@@ -65,7 +68,7 @@ namespace ChatClient.Net
             Task.Run(() =>
             {
                 //infinite loop, will run as long as it's true:
-                while (true)
+                while (_isReadingPackets)
                 {
                     try
                     {
@@ -90,7 +93,8 @@ namespace ChatClient.Net
                                 Console.WriteLine("Waiting for an opcode...");
                                 break;
                         }
-                    }catch (Exception ex)
+                    }
+                    catch (Exception ex)
                     {
                         //Save the exception and runtime errors to a file called exception_log.txt:
                         logException(ex);
@@ -144,10 +148,27 @@ namespace ChatClient.Net
         //Function to disconnect a client from the server:
         public void Disconnect()
         {
-            if(_client.Connected)//If the client is connected, close the socket connection:
+            if (_client.Connected)//If the client is connected, close the socket connection:
             {
+                StopReadingPackets(); //Stop reading the packets before disconnecting the user:
                 _client.Close(); //Close the socket connection:
             }
+        }
+
+        //Function to start reading packets:
+        public void StartReadingPackets()
+        {
+            if (!_isReadingPackets)
+            {
+                _isReadingPackets = true;
+                ReadPackets();
+            }
+        }
+
+        //Function to stop reading packets:
+        public void StopReadingPackets()
+        {
+            _isReadingPackets = false;
         }
     }
 }

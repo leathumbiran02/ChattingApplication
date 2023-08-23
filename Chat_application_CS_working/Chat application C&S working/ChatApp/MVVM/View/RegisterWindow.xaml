@@ -12,19 +12,21 @@
     FontSize="18"
     mc:Ignorable="d">
     <Border
-        Margin="80,10"
+        Margin="150,10"
         Background="#222831"
         CornerRadius="30">
-        <StackPanel Margin="60,0">
+        <StackPanel Margin="80,0">
             <Label
                 HorizontalAlignment="Center"
                 Content="Register"
                 FontSize="40"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <Separator Background="#EEEEEE" />
             <Label
                 Margin="30,0"
                 Content="Full Name"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <!--  Full Name:  -->
             <TextBox
@@ -36,6 +38,7 @@
             <Label
                 Margin="30,0"
                 Content="Email Address"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <!--  Email Address:  -->
             <TextBox
@@ -54,10 +57,12 @@
                 Margin="30,0"
                 Background="#393E46"
                 FontSize="18"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <Label
                 Margin="30,0"
                 Content="Password"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <!--  Password:  -->
             <PasswordBox
@@ -68,17 +73,20 @@
                 Foreground="#EEEEEE" />
             <Button
                 Name="submit_btn"
-                Margin="200,15"
+                Margin="100,15"
                 Background="#00ADB5"
-                Click="submit_btn_click"
+                Click="Submit_btn_click"
                 Content="Submit"
                 FontSize="18"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE" />
             <!--  Submit Button:  -->
             <Button
                 HorizontalAlignment="Center"
-                Background="#222831"
-                Click="go_to_login"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="Go_to_login"
+                FontWeight="SemiBold"
                 Foreground="#EEEEEE">
                 Already have an account? Click here
             </Button>
