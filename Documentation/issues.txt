@@ -1,9 +1,9 @@
 issues:
 
 1.) When sending messages it does not clear the message box.
-2.) There are no longer files for storing the conversation history or for the runtime exceptions from the server.
-3.) There is no login and registration capabiltiies.
-4.) There is no database.
+2.) There are no longer files for storing the conversation history or for the runtime exceptions from the server. (Addressed on 22 August 2023)
+3.) There is no login and registration capabiltiies. (Login was addressed on 23 August 2023)
+4.) There is no database. (Addressed on 23 August 2023)
 5.) There is no edit and deletion of accounts.
 6.) The user interface has not been created.
 7.) The reason for using MVVM has not been justified.
