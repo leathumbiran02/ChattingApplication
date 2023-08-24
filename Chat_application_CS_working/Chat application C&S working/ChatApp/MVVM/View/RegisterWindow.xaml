@@ -5,16 +5,29 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:ChatApp"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="RegisterWindow"
+    Title="Chatting Application - Register"
     Width="814"
     Height="470"
-    Background="#00ADB5"
     FontSize="18"
     mc:Ignorable="d">
+
+    <!--  Set the window's background using an ImageBrush  -->
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/register-back-image.jpg" Stretch="None" />
+    </Window.Background>
+
     <Border
-        Margin="150,10"
-        Background="#222831"
-        CornerRadius="30">
+        Margin="150,15"
+        CornerRadius="30"
+        Opacity="0.95">
+
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Offset="0" Color="#00072d" />
+                <GradientStop Offset="1" Color="#240046" />
+            </LinearGradientBrush>
+        </Border.Background>
+
         <StackPanel Margin="80,0">
             <Label
                 HorizontalAlignment="Center"
@@ -74,7 +87,9 @@
             <Button
                 Name="submit_btn"
                 Margin="100,15"
-                Background="#00ADB5"
+                Padding="15,5"
+                Background="#3C096C"
+                BorderThickness="0"
                 Click="Submit_btn_click"
                 Content="Submit"
                 FontSize="18"

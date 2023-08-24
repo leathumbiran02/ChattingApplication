@@ -103,7 +103,7 @@ namespace ChatApp
             //Disconnect from the server and perform cleanup:
             _server.Disconnect();
 
-            // Close all windows except the main window
+            //Close all windows except the main window:
             foreach (Window window in Application.Current.Windows)
             {
                 if (window != Application.Current.MainWindow)
@@ -112,7 +112,7 @@ namespace ChatApp
                 }
             }
 
-            // After performing necessary actions, navigate to the RegisterWindow
+            //After performing necessary actions, navigate to the RegisterWindow:
             var registerWindow = new RegisterWindow();
             registerWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             registerWindow.Show();

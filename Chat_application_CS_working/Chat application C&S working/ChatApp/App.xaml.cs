@@ -15,6 +15,7 @@ namespace ChatApp
     {
         public App()
         {
+            //This is used to prevent the entire application from automatically closing when the main window is closed:
             ShutdownMode = ShutdownMode.OnExplicitShutdown;
         }
 
@@ -22,7 +23,7 @@ namespace ChatApp
         {
             base.OnStartup(e);
 
-            // Create and show the main window
+            //Create and show the main window:
             RegisterWindow registerWindow = new RegisterWindow();
             registerWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             registerWindow.Show();

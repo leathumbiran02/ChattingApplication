@@ -23,3 +23,5 @@
 [2023/08/24 01:01:41] lea_t: Hello!
 [2023/08/24 01:03:02] lea_t: Good Morning!
 [2023/08/24 01:25:29] lea_t: Hmmm....
+[2023/08/24 01:42:05] lea_t: The logout feature is working!!!!!!!
+[2023/08/24 01:42:29] lea_t: I am back after logging out and logging in :)

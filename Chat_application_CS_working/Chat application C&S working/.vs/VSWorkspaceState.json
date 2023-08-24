@@ -8,6 +8,6 @@
     "\\ChatApp\\MVVM\\ViewModel",
     "\\ChatServer"
   ],
-  "SelectedNode": "\\ChatApp\\MVVM\\ViewModel\\LoginWindow.xaml.cs",
+  "SelectedNode": "\\ChatApp\\MVVM\\View\\LoginWindow.xaml",
   "PreviewInSolutionExplorer": false
 }

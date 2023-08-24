@@ -8,13 +8,26 @@
     Title="Chatting Application - Login"
     Width="814"
     Height="470"
-    Background="#00ADB5"
     FontSize="18"
     mc:Ignorable="d">
+
+    <!--  Set the window's background using an ImageBrush  -->
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/back-image.jpg" Stretch="None" />
+    </Window.Background>
+
     <Border
         Margin="150,55"
-        Background="#222831"
-        CornerRadius="30">
+        CornerRadius="30"
+        Opacity="0.95">
+
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Offset="0" Color="#00072d" />
+                <GradientStop Offset="1" Color="#240046" />
+            </LinearGradientBrush>
+        </Border.Background>
+
         <StackPanel Margin="80,0">
             <Label
                 HorizontalAlignment="Center"
@@ -51,7 +64,9 @@
             <Button
                 Name="submit_btn"
                 Margin="100,30"
-                Background="#00ADB5"
+                Padding="15,5"
+                Background="#3C096C"
+                BorderThickness="0"
                 Click="Submit_btn_click"
                 Command="{Binding ConnectToServerCommand}"
                 Content="Submit"
