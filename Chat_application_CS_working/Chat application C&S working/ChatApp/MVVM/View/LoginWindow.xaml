@@ -13,14 +13,13 @@
 
     <!--  Set the window's background using an ImageBrush  -->
     <Window.Background>
-        <ImageBrush ImageSource="/Images/back-image.jpg" Stretch="None" />
+        <ImageBrush ImageSource="/Images/register-back-image.jpg" Stretch="None" />
     </Window.Background>
 
     <Border
         Margin="150,55"
         CornerRadius="30"
         Opacity="0.95">
-
         <Border.Background>
             <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
                 <GradientStop Offset="0" Color="#00072d" />
@@ -65,7 +64,7 @@
                 Name="submit_btn"
                 Margin="100,30"
                 Padding="15,5"
-                Background="#3C096C"
+                Background="#5A189A"
                 BorderThickness="0"
                 Click="Submit_btn_click"
                 Command="{Binding ConnectToServerCommand}"

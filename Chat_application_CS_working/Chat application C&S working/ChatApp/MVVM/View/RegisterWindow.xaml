@@ -13,7 +13,7 @@
 
     <!--  Set the window's background using an ImageBrush  -->
     <Window.Background>
-        <ImageBrush ImageSource="/Images/register-back-image.jpg" Stretch="None" />
+        <ImageBrush ImageSource="/Images/back-image.jpg" Stretch="None" />
     </Window.Background>
 
     <Border
@@ -86,9 +86,9 @@
                 Foreground="#EEEEEE" />
             <Button
                 Name="submit_btn"
-                Margin="100,15"
+                Margin="100,14"
                 Padding="15,5"
-                Background="#3C096C"
+                Background="#5A189A"
                 BorderThickness="0"
                 Click="Submit_btn_click"
                 Content="Submit"

@@ -37,6 +37,7 @@ C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.dll
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ref\ChatServer.dll
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\bin\Debug\net5.0\ChatServer.pdb
+C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.csproj.AssemblyReference.cache
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfoInputs.cache
 C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\obj\Debug\net5.0\ChatServer.AssemblyInfo.cs

@@ -1,27 +1,9 @@
-[2023/08/21 02:29:40] User 1: Are our chats being saved!?
-[2023/08/21 02:29:47] User 2: Hmm, it appears so...
-[2023/08/21 02:30:20] User 3: Then we should type very very VERY long messages to see if the server can handle it!
-[2023/08/21 02:41:16] User 5: I am testing if exceptions are being stored in a file...
-[2023/08/21 02:41:26] User 4: Maybe leave the chat and see if it saves that?
-[2023/08/21 02:41:32] User 5: Sure
-[2023/08/21 02:44:39] Hi: Hi!
-[2023/08/21 02:46:47] Bye: Bye!
-[2023/08/21 14:00:36] User 9: Hi? Are my messages going through...
-[2023/08/21 18:25:44] Test1: Hiiii
-[2023/08/21 18:30:02] Lea: hiii
-[2023/08/23 16:01:18] arno_m: Hi!
-[2023/08/23 16:08:58] lea_t: Hii!
-[2023/08/23 18:02:02] lea_t: hiii
-[2023/08/23 18:54:03] lea_t: hi
-[2023/08/23 18:54:07] arno_m: hi
-[2023/08/23 18:58:09] lea_t: bye
-[2023/08/23 18:58:14] arno_m: bye
-[2023/08/24 00:39:28] lea_t: Hi! 
-[2023/08/24 00:42:06] lea_t: Is this working?
-[2023/08/24 00:44:11] lea_t: Hi! Hiiiii
-[2023/08/24 00:59:31] lea_t: Hey!
-[2023/08/24 01:01:41] lea_t: Hello!
-[2023/08/24 01:03:02] lea_t: Good Morning!
-[2023/08/24 01:25:29] lea_t: Hmmm....
-[2023/08/24 01:42:05] lea_t: The logout feature is working!!!!!!!
-[2023/08/24 01:42:29] lea_t: I am back after logging out and logging in :)
+
+[2023/08/24 19:07:10] anne_smith: Hi Lea!
+[2023/08/24 19:07:19] lea_t: Hey!
+[2023/08/24 19:07:26] anne_smith: How are you?
+[2023/08/24 19:07:34] lea_t: I am good and you?
+[2023/08/24 19:08:56] anne_smith: Good good...I might have to go soon, I'll see you later!
+[2023/08/24 19:12:12] lea_t: I'll see you later!
+[2023/08/24 19:14:18] anne_smith: Okay I have to go now! See you later!
+[2023/08/24 19:14:26] lea_t: See you later Anne!

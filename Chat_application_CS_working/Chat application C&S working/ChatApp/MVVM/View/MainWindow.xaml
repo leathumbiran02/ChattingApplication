@@ -10,35 +10,61 @@
     Height="470"
     mc:Ignorable="d">
 
+    <!--  Set the window's background using an ImageBrush  -->
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/chat-back-image.jpeg" Stretch="None" />
+    </Window.Background>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <DockPanel Background="#FF222831">
+        <DockPanel>
             <TextBox
                 Height="25"
-                Margin="20,20,20,20"
+                Margin="20,40,20,10"
                 Background="#FFEEEEEE"
                 DockPanel.Dock="Top"
                 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
             <Button
                 x:Name="connect_btn"
                 Height="25"
-                Margin="20,0,20,20"
-                Background="#FF00ADB5"
-                BorderBrush="#FF282828"
+                Margin="20,20,20,20"
                 Command="{Binding ConnectToServerCommand}"
                 Content="Connect"
                 DockPanel.Dock="Top"
                 FontFamily="Arial"
                 FontSize="15"
-                FontStyle="Normal"
-                Foreground="White" />
+                FontStyle="Normal">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}">
+                            <ContentPresenter
+                                x:Name="contentPresenter"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Content="{TemplateBinding Content}"
+                                ContentTemplate="{TemplateBinding ContentTemplate}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Background" Value="#3C096C" />
+                                <Setter Property="Foreground" Value="#EEEEEE" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#001C55" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
             <ListView
-                Margin="0,0,0,100"
-                Background="#FF222831"
+                Margin="0,0,0,80"
+                Background="Transparent"
+                BorderThickness="0"
                 FontFamily="Arial"
                 FontSize="15"
                 Foreground="White"
@@ -52,8 +78,8 @@
         </DockPanel>
         <Button
             Height="25"
-            Margin="20,380,20,20"
-            Background="#FF00ADB5"
+            Margin="20,385,20,20"
+            Background="#001C55"
             BorderBrush="#FF282828"
             Click="Logout_btn_click"
             Content="Logout"
@@ -62,21 +88,23 @@
             FontSize="15"
             FontStyle="Normal"
             Foreground="White" />
-        <StackPanel Grid.Column="1" Background="#FF222831">
+        <StackPanel Grid.Column="1">
             <ListView
                 Height="380"
-                Background="#FF222831"
+                Background="Transparent"
+                BorderThickness="0"
                 FontFamily="Arial"
                 FontSize="15"
                 Foreground="White"
                 ItemsSource="{Binding Messages}" />
 
-            <StackPanel Background="#FF222831" Orientation="Horizontal">
+            <StackPanel Background="Transparent" Orientation="Horizontal">
                 <TextBox
                     Width="545"
                     Height="55"
                     VerticalContentAlignment="Center"
                     Background="#FFEEEEEE"
+                    BorderThickness="0"
                     FontFamily="Arial"
                     FontSize="15"
                     Foreground="Black"
@@ -84,15 +112,34 @@
                 <Button
                     x:Name="send_btn"
                     Width="55"
-                    Background="#FF00ADB5"
                     Command="{Binding SendMessageCommand}"
                     Content="Send"
                     FontFamily="Arial"
-                    FontSize="15"
-                    Foreground="White" />
+                    FontSize="15">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" Background="{TemplateBinding Background}">
+                                <ContentPresenter
+                                    x:Name="contentPresenter"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Content="{TemplateBinding Content}"
+                                    ContentTemplate="{TemplateBinding ContentTemplate}" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter TargetName="border" Property="Background" Value="#3C096C" />
+                                    <Setter Property="Foreground" Value="#EEEEEE" />
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="#001C55" />
+                                    <Setter Property="Foreground" Value="White" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </StackPanel>
-
         </StackPanel>
-
     </Grid>
 </Window>
