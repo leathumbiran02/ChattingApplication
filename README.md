@@ -4,4 +4,3 @@ A group project for a chatting application for the final year module Enterprise 
 Group Members:
 Arno Moller cc96zrrs5
 Lea Thumbiran LMTPQFTH6
-Johan van de Wetering w4552p298
