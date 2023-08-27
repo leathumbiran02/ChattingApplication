@@ -1,6 +1,6 @@
 issues:
 
-1.) When sending messages it does not clear the message box.
+1.) When sending messages it does not clear the message box.(INCOMPLETE)
 
 2.) There are no longer files for storing the conversation history or for the runtime exceptions from the server. (Addressed on 22 August 2023)
 
@@ -8,15 +8,12 @@ issues:
 
 4.) There is no database. (Addressed on 23 August 2023)
 
-5.) There is no edit and deletion of accounts.
+5.) There is no edit and deletion of accounts. (REMOVED FEATURE)
 
 6.) The user interface has not been created. (Addressed on 21 August 2023)
 
-7.) The reason for using MVVM has not been justified. 
+7.) The reason for using MVVM has not been justified. (Addressed 25 August 2023)
 
 8.) When sending long messages an exception occurs in the Server.cs (Addressed on 22 August 2023)
 
 9.) The log out method needs to be changed as it results in the Main Window and the Register Window being open at the same time (Addressed on 24 August 2023)
-
-References:
-1.) https://youtu.be/I-Xmp-mulz4?si=5GWyRsBAie-BJcgV
