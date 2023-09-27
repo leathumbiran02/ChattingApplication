@@ -78,7 +78,7 @@ namespace ChatApp
                 return;
             }
 
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=localhost; Initial Catalog=ChattingAppDB; Integrated Security=True"); //Connection string for SQL Server:
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB; Initial Catalog=ChattingAppDB; Integrated Security=True"); //Connection string for SQL Server:
 
             try
             {

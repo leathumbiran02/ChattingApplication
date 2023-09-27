@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj": {}
+    "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj": {
+    "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj",
+        "projectUniqueName": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj",
         "projectName": "ChatClient",
-        "projectPath": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj",
-        "packagesPath": "C:\\Users\\leath\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\obj\\",
+        "projectPath": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\ChatClient.csproj",
+        "packagesPath": "C:\\Users\\Lea\\.nuget\\packages\\",
+        "outputPath": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\University Resources\\Programming\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\leath\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -28,8 +34,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj": {
-                "projectPath": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj"
+              "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj": {
+                "projectPath": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj"
               }
             }
           }
@@ -71,22 +77,28 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.121\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj": {
+    "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
+        "projectUniqueName": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
         "projectName": "ChatServer",
-        "projectPath": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
-        "packagesPath": "C:\\Users\\leath\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\obj\\",
+        "projectPath": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
+        "packagesPath": "C:\\Users\\Lea\\.nuget\\packages\\",
+        "outputPath": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\University Resources\\Programming\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\leath\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -125,7 +137,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.121\\RuntimeIdentifierGraph.json"
         }
       }
     }

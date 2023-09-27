@@ -338,3 +338,19 @@
    at System.IO.BinaryReader.ReadByte()
    at ChatServer.Client.Process() in C:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
 
+[2023/08/25 21:09:07] - Exception: Unable to read beyond the end of the stream.
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in D:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/09/27 19:25:32] - Exception: Unable to read beyond the end of the stream.
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in D:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/09/27 19:25:37] - Exception: Unable to read beyond the end of the stream.
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in D:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+
+[2023/09/27 19:25:42] - Exception: Unable to read beyond the end of the stream.
+   at System.IO.BinaryReader.ReadByte()
+   at ChatServer.Client.Process() in D:\xampp\htdocs\ChattingApplication\Chat_application_CS_working\Chat application C&S working\ChatServer\Client.cs:line 52
+

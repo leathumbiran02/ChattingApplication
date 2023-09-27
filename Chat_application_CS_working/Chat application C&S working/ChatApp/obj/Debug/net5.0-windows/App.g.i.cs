@@ -46,7 +46,7 @@ namespace ChatApp {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.17.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.21.0")]
         public static void Main() {
             ChatApp.App app = new ChatApp.App();
             app.Run();

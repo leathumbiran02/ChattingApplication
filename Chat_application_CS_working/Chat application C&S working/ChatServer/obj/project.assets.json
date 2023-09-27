@@ -8,20 +8,28 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\leath\\.nuget\\packages\\": {}
+    "C:\\Users\\Lea\\.nuget\\packages\\": {},
+    "D:\\University Resources\\Programming\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
+      "projectUniqueName": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
       "projectName": "ChatServer",
-      "projectPath": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
-      "packagesPath": "C:\\Users\\leath\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\obj\\",
+      "projectPath": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\ChatServer.csproj",
+      "packagesPath": "C:\\Users\\Lea\\.nuget\\packages\\",
+      "outputPath": "D:\\xampp\\htdocs\\ChattingApplication\\Chat_application_CS_working\\Chat application C&S working\\ChatServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\University Resources\\Programming\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\leath\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Lea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -60,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.121\\RuntimeIdentifierGraph.json"
       }
     }
   }
